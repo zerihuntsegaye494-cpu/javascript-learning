@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    background: white;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 320px;
+}
+
+h1 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.counter-display {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 1rem 0 1.5rem 0;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    min-width: 80px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-decrease {
+    background: #fed7d7;
+    color: #c53030;
+}
+
+.btn-decrease:hover {
+    background: #feb2b2;
+}
+
+.btn-reset {
+    background: #e2e8f0;
+    color: #2d3748;
+}
+
+.btn-reset:hover {
+    background: #cbd5e0;
+}
+
+.btn-increase {
+    background: #c6f6d5;
+    color: #276749;
+}
+
+.btn-increase:hover {
+    background: #9ae6b4;
+}
+
+/* When counter is negative */
+.counter-display.negative {
+    color: #e53e3e;
+}
+
+/* When counter is positive */
+.counter-display.positive {
+    color: #38a169;
+}
